@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :authenticate_request, only: [:show]
+
 
   def new
   end

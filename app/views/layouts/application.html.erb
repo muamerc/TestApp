@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Railsapp</title>
+    <title>Refrion</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'pace-theme-flash', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'bootstrap', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'bootstrap-theme', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <%= stylesheet_link_tag    'animate.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'jquery.scrollbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'webarch', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="error-body no-top pace-done">
     <%= yield %>
+    <%= javascript_include_tag 'jquery-1.11.3.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'pace.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jqueryblockui.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.unveil.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.scrollbar.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.animateNumbers', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'jquery.validate.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'select2.min', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'webarch.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'chat.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bootstrap.min', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>
